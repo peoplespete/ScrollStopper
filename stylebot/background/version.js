@@ -6,7 +6,7 @@
  * Only update the version string here if you want to show a
  * notification.
  */
-var VERSION = '2';
+var VERSION = '0';
 
 /**
  * Show notification for version update

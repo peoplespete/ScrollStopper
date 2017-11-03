@@ -14,6 +14,12 @@ var stylebot = {
   selectorGenerator: null,
 
   options: {
+    facebookToggle: true,
+    instagramToggle: true,
+    linkedinToggle: true,
+    pinterestToggle: true,
+    twitterToggle: true,
+
     useShortcutKey: true,
     shortcutKey: 77, // 77 is keycode for 'm'
     shortcutMetaKey: 'alt',

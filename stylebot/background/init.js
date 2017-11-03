@@ -5,6 +5,12 @@ var cache = {
   styles: {},
 
   options: {
+    facebookToggle: true,
+    instagramToggle: true,
+    linkedinToggle: true,
+    pinterestToggle: true,
+    twitterToggle: true,
+
     useShortcutKey: true,
     shortcutKey: 77, // keydown code for 'm'
     shortcutMetaKey: 'alt',
