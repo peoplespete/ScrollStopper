@@ -43,3 +43,10 @@ div[data-id*="urn:li"]:nth-of-type(n + 6) {
     display: none;
 }
 
+{
+  'div[data-id*="urn:li"]:nth-of-type(n + 2)': {
+    'visibility': 'hidden',
+    'display': 'none'
+  }
+}
+

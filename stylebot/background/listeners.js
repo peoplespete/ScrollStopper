@@ -4,6 +4,7 @@
 
 chrome.extension.onRequest.addListener(
   function(request, sender, sendResponse) {
+    console.log(request.name)
     switch (request.name) {
       case 'activateBrowserAction':
         BrowserAction.activate(sender.tab);

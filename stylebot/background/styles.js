@@ -310,6 +310,17 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
     }
   }
 
+  if (cache.options.linkedinToggle && aURL.includes("linkedin")) {
+    rules = {
+      'div[data-id*="urn:li"]:nth-of-type(n + 5)': {
+        'visibility': 'hidden',
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+    console.log("LINKEDIN RULE APPIED")
+  }
+
   var response = {
     url: pageURL,
     rules: rules,
