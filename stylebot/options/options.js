@@ -47,8 +47,8 @@ function init() {
     }
   });
 
-  KeyCombo.init($('[name=shortcutKeyCharacter]').get(0),
-    $('[name=shortcutKey]').get(0));
+  // KeyCombo.init($('[name=shortcutKeyCharacter]').get(0),
+    // $('[name=shortcutKey]').get(0));
 
   Options.styles.init();
   attachListeners();

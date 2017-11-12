@@ -310,16 +310,62 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
     }
   }
 
+  // FACEBOOK
+  if (cache.options.facebookToggle && aURL.includes("facebook")) {
+    rules = {
+      'div[id*="substream"]:nth-of-type(n + 2)': {
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+    // console.log("FACEBOOK RULE APPIED")
+  }
+
+  // INSTAGRAM
+  if (cache.options.instagramToggle && aURL.includes("instagram")) {
+    rules = {
+      'article ._70iju:nth-of-type(n + 3)': {
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+    // console.log("INSTAGRAM RULE APPIED")
+  }
+
+  // LINKEDIN
   if (cache.options.linkedinToggle && aURL.includes("linkedin")) {
     rules = {
-      'div[data-id*="urn:li"]:nth-of-type(n + 5)': {
+      'div[data-id*="urn:li"]:nth-of-type(n + 9)': {
         'visibility': 'hidden',
         'display': 'none'
       }
     }
     pageURL = aURL
-    console.log("LINKEDIN RULE APPIED")
+    // console.log("LINKEDIN RULE APPIED")
   }
+
+  // PINTEREST
+  if (cache.options.pinterestToggle && aURL.includes("pinterest")) {
+    rules = {
+      '.Grid__Item:nth-of-type(n + 7)': {
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+    // console.log("PINTEREST RULE APPIED")
+  }
+
+  // TWITTER
+  if (cache.options.twitterToggle && aURL.includes("twitter")) {
+    rules = {
+      'ol.stream-items li:nth-of-type(n + 6), div.stream-end-inner': {
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+    // console.log("TWITTER RULE APPIED")
+  }
+
 
   var response = {
     url: pageURL,
