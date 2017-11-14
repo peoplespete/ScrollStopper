@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name"            : "FiniteScroll",
-  "version"         : "2.3",
-  "description"     : "Stop scrolling and scrolling and scrolling and scrolling and scrolling...",
+  "name"            : "ScrollStopper",
+  "version"         : "0.0",
+  "description"     : "It's time you had the option of spending a medium amount of time on the internet.  ScrollStopper helps you do just that by preventing several popular sites from loading more and more as you scroll.",
 
   "background" : {
     "scripts": [
@@ -156,9 +156,7 @@
     "contextMenus",
     "notifications",
     "storage",
-    "http://userstyles.org/",
     "unlimitedStorage",
-    "http://stylebot.me/",
     "<all_urls>"
   ]
 }

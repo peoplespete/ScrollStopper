@@ -315,44 +315,42 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
     rules = {
       'div[id*="substream"]:nth-of-type(n + 2)': {
         'display': 'none'
+      },
+      'div[data-testid="fbfeed_placeholder_story"], .fsxl.fcg': {
+        'display': 'none'
       }
     }
     pageURL = aURL
-    // console.log("FACEBOOK RULE APPIED")
   }
 
   // INSTAGRAM
   if (cache.options.instagramToggle && aURL.includes("instagram")) {
     rules = {
-      'article ._70iju:nth-of-type(n + 3)': {
+      'article ._70iju:nth-of-type(n + 4), ._anzsd': {
         'display': 'none'
       }
     }
     pageURL = aURL
-    // console.log("INSTAGRAM RULE APPIED")
   }
 
   // LINKEDIN
   if (cache.options.linkedinToggle && aURL.includes("linkedin")) {
     rules = {
-      'div[data-id*="urn:li"]:nth-of-type(n + 9)': {
-        'visibility': 'hidden',
+      'div[data-id*="urn:li"]:nth-of-type(n + 9), .loader': {
         'display': 'none'
       }
     }
     pageURL = aURL
-    // console.log("LINKEDIN RULE APPIED")
   }
 
   // PINTEREST
   if (cache.options.pinterestToggle && aURL.includes("pinterest")) {
     rules = {
-      '.Grid__Item:nth-of-type(n + 7)': {
+      '.Grid__Item:nth-of-type(n + 15)': {
         'display': 'none'
       }
     }
     pageURL = aURL
-    // console.log("PINTEREST RULE APPIED")
   }
 
   // TWITTER
@@ -363,7 +361,6 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
       }
     }
     pageURL = aURL
-    // console.log("TWITTER RULE APPIED")
   }
 
 
