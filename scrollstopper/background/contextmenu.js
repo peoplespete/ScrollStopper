@@ -9,13 +9,10 @@ var ContextMenu = {
    */
   init: function() {
     ContextMenu.remove();
-    if (cache.options.contextMenu) {
-      ContextMenu.create('Stylebot', null, null, null, ContextMenu.ID);
-      ContextMenu.create('Style Element', ContextMenu.ID, 'openWidget');
-      ContextMenu.create('View Options...', ContextMenu.ID, 'showOptions');
-      ContextMenu.create('Search...', ContextMenu.ID, 'searchSocial');
-      ContextMenu.create('Share...', ContextMenu.ID, 'postToSocial');
-    }
+    // if (cache.options.contextMenu) {
+      // ContextMenu.create('ScrollStopper', null, null, null, ContextMenu.ID);
+      // ContextMenu.create('Settings', ContextMenu.ID, 'showOptions');
+    // }
   },
 
   create: function(title, parentId, action, type, id) {
