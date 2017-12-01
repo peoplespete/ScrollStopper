@@ -363,6 +363,28 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
     pageURL = aURL
   }
 
+  // REDDIT
+  if (cache.options.redditToggle && aURL.includes("reddit")) {
+    rules = {
+      'span.next-button a, span.nextprev, .comment:nth-of-type(n+6)': {
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+  }
+
+  // BUZZFEED
+  if (cache.options.buzzfeedToggle && aURL.includes("buzzfeed")) {
+    rules = {
+      'div.card.js-feed-item:nth-of-type(n + 15), .js-sidebar-content li:nth-of-type(n + 5), div[id*="mod-site-component-list-"]': {
+        'display': 'none'
+      },
+      '#mod-site-component-list-1': {
+        'display': 'block'
+      }
+    }
+    pageURL = aURL
+  }
 
   var response = {
     url: pageURL,

@@ -10,6 +10,8 @@ var cache = {
     linkedinToggle: true,
     pinterestToggle: true,
     twitterToggle: true,
+    redditToggle: true,
+    buzzfeedToggle: true,
 
     useShortcutKey: true,
     shortcutKey: 77, // keydown code for 'm'
