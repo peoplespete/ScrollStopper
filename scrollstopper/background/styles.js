@@ -326,7 +326,7 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
   // INSTAGRAM
   if (cache.options.instagramToggle && aURL.includes("instagram")) {
     rules = {
-      'article ._70iju:nth-of-type(n + 4), ._anzsd': {
+      'article ._mnav9:nth-of-type(n + 4), ._anzsd': {
         'display': 'none'
       }
     }
