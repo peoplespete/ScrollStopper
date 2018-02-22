@@ -17,3 +17,6 @@ patch.diff
 stylebot/js/templates.js
 
 Gemfile.lock
+
+*.pem
+*.crx
