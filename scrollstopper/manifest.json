@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name"            : "ScrollStopper",
-  "version"         : "0.4",
+  "version"         : "0.5",
   "description"     : "It's time you had the option of spending a medium amount of time on social media.  SS disables sites from loading extra content.",
   "background" : {
     "scripts": [
