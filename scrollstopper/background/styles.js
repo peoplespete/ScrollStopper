@@ -338,10 +338,18 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
     rules = {
       'div[data-id*="urn:li"]:nth-of-type(n + 9), .loader': {
         'display': 'none'
+      },
+      // this bit isn't working as it does in Stylebot
+      'div.sort-dropdown::after': {
+        'margin-top': '10px',
+        'content': "Scrollstopper On",
+        'font-size': '150px',
+        'color': 'blue',
       }
     }
     pageURL = aURL
   }
+  console.log("LINKEDIN!")
 
   // PINTEREST
   if (cache.options.pinterestToggle && aURL.includes("pinterest")) {
