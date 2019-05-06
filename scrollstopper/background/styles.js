@@ -336,16 +336,17 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
   // LINKEDIN
   if (cache.options.linkedinToggle && aURL.includes("linkedin")) {
     rules = {
-      'div[data-id*="urn:li"]:nth-of-type(n + 9), .loader': {
+      '.core-rail [id^=ember]:nth-of-type(n + 9), .loader, .feed-new-update-pill__new-update-button': {
         'display': 'none'
       },
-      // this bit isn't working as it does in Stylebot
+      // below not working atm
       'div.sort-dropdown::after': {
         'margin-top': '10px',
         'content': "Scrollstopper On",
         'font-size': '150px',
         'color': 'blue',
-      }
+      },
+
     }
     pageURL = aURL
   }
@@ -393,6 +394,17 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
     }
     pageURL = aURL
   }
+
+ // YOUTUBE
+  if (cache.options.youtubeToggle && aURL.includes("youtube")) {
+    rules = {
+      '.videowall-endscreen, #upnext, .ytd-compact-autoplay-renderer, .ytd-watch-next-secondary-results-renderer': {
+        'display': 'none'
+      }
+    }
+    pageURL = aURL
+  }
+
 
   var response = {
     url: pageURL,

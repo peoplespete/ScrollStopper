@@ -21,6 +21,7 @@ var stylebot = {
     twitterToggle: true,
     redditToggle: true,
     buzzfeedToggle: true,
+    youtubeToggle: true,
 
     useShortcutKey: true,
     shortcutKey: 77, // 77 is keycode for 'm'

@@ -12,6 +12,7 @@ var cache = {
     twitterToggle: true,
     redditToggle: true,
     buzzfeedToggle: true,
+    youtubeToggle: true,
 
     useShortcutKey: true,
     shortcutKey: 77, // keydown code for 'm'
