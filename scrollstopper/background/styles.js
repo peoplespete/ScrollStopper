@@ -336,21 +336,12 @@ Styles.prototype.getCombinedRulesForPage = function(aURL, tab) {
   // LINKEDIN
   if (cache.options.linkedinToggle && aURL.includes("linkedin")) {
     rules = {
-      '.core-rail [id^=ember]:nth-of-type(n + 9), .loader, .feed-new-update-pill__new-update-button': {
+      '.core-rail [data-id^="urn:li:activity:"]:nth-of-type(n + 9), .loader, .feed-new-update-pill__new-update-button': {
         'display': 'none'
       },
-      // below not working atm
-      'div.sort-dropdown::after': {
-        'margin-top': '10px',
-        'content': "Scrollstopper On",
-        'font-size': '150px',
-        'color': 'blue',
-      },
-
     }
     pageURL = aURL
   }
-  console.log("LINKEDIN!")
 
   // PINTEREST
   if (cache.options.pinterestToggle && aURL.includes("pinterest")) {
