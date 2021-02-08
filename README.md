@@ -4,9 +4,9 @@ It's time you had the option of spending a medium amount of time on social media
 
 ### Links
 
-* Chrome Webstore: <https://chrome.google.com/webstore/detail/scrollstopper/pbadlbgcbkmhdlnbancbdmimccdkhnoe>
-* About: <https://www.digitaldetangler.com/scrollstopper>
-* Request Support: <https://goo.gl/forms/bxjNPZLZHVbM9fdx2>
+* [Chrome Webstore](https://chrome.google.com/webstore/detail/scrollstopper/pbadlbgcbkmhdlnbancbdmimccdkhnoe)
+* [About](https://www.digitaldetangler.com/scrollstopper)
+* [Request Support](https://goo.gl/forms/bxjNPZLZHVbM9fdx2)
 
 ### Acknowledgements
 
